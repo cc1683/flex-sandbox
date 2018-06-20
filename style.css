@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+}
+button {
+    padding: 1rem;
+    color: #333;
+    background-color: #efefef;
+    border-radius: 10px;
+}
+.holder {
+    padding: 1.25rem;
+    margin: 1rem;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+#home-holder {
+    background-color: azure;
+}
+#-holder {
+    background-color: bisque;
+}
+#logout-holder {
+    background-color: blanchedalmond;
+}

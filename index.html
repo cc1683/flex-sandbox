@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>CSS Flex</title>
+</head>
+<body>
+    <div id="app">
+        <h1>First Flexbox layout</h1>
+        <button @click="flexStart">justify-content: flex-start (default)</button>
+        <button @click="flexEnd">justify-content: flex-end</button>
+        <button @click="center">justify-content: center</button>
+        <button @click="spaceBetween">justify-content: space-between</button>
+        <button @click="spaceAround">justify-content: space-around</button>
+        <button @click="spaceEvenly">justify-content: space-evenly</button>
+        <p>justify-content: {{currentStyle}}</p>
+        <div class="container" :style="containerObject">
+            <div class="holder" id="home-holder">Home</div>
+            <div class="holder" id="search-holder">Search</div>
+            <div class="holder" id="logout-holder">Logout</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
